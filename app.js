@@ -10,12 +10,32 @@ app.get("/", (req, res) => {
 app.get("/bacheca", (req, res) =>{
     const myblog = [
         {
-            title:"",
+            title:"Ciambellone",
             content:"",
-            image:"",
-            ingredient:["",""]
+            ingredient:["latte","uova","farina","zucchero"]
+        },
+        {
+            title:"Cracker_barbabietola",
+            content:"",
+            ingredient:["latte","uova","farina","zucchero"]
+        },
+        {
+            title:"Pane_fritto_dolce",
+            content:"",
+            ingredient:["latte","uova","farina","zucchero"]
+        },
+        {
+            title:"Pasta_barbabietola",
+            content:"",
+            ingredient:["latte","uova","farina","zucchero"]
+        },
+        {
+            title:"Torta_paesana",
+            content:"",
+            ingredient:["latte","uova","farina","zucchero"]
         }
     ]
+    res.json(myblog);
 });
 
 app.listen(port , () =>{
