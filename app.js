@@ -6,9 +6,10 @@ app.use(express.static("public"));
 
 app.get("/", (req, res) => {
     res.json({
-        messaggio: "Server del Mio blog",
-    })
+        messaggio: "Server del mio blog",
+    });
 });
+
 app.get("/bacheca", (req, res) =>{
     const myblog = [
         {
@@ -47,6 +48,5 @@ app.get("/bacheca", (req, res) =>{
 });
 
 app.listen(port , () =>{
-    console.log("Ascolta la porta http://localhost:" + port );
-    
+    console.log("Ascolta la http://localhost:" + port );
 });
